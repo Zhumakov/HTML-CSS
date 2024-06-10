@@ -1,0 +1,43 @@
+.button-body {
+    max-height: 54px;
+    color: var(--color-text);
+    font-size: 18px;
+    line-height: 22px;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-primary);
+    cursor: pointer;
+}
+
+.button-body:hover {
+    background-color: var(--color-primary-on-hover);
+}
+
+.button-without-bg {
+    background: none;
+    border: 1px solid var(--border-color);
+}
+
+.button-without-bg:hover {
+    background: none;
+}
+
+@media (max-width: 600px) {
+    .button-body {
+        padding: 12px 24px;
+        height: 46px;
+    }
+}
+
+.contacts {
+    display: flex;
+    gap: 24px;
+}
+
+.contacts > button {
+    background: none;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 11px;
+}

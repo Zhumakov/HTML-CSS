@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-text: #fafafa;
+    --color-text-on-hover: #c6c6c6;
+    --color-non-main-text: #AFB2BF;
+    --color-title-text: #E47AD5;
+    --color-primary: #6c38cc;
+    --color-primary-on-hover: #8452e1;
+    --color-gradient: linear-gradient(93.33deg, #D77BE6 9.26%, #BE63E6 42.32%, #6C38CC 104.58%);
+    --color-bg: #101114;
+    --color-section-bg: #1E1F29;
+    --color-footer-bg: #2E2D3D;
+    --label-bg-color: #2E2D3D;
+    --border-color: #4D5064;
+}
+
+
+body {
+    background-color: var(--color-bg);
+    margin: 0;
+    font-family: "Fira Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}

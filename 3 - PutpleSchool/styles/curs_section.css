@@ -1,0 +1,143 @@
+/* curs section */
+.curs-section {
+    max-width: 1220px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    background: none;
+}
+
+/* curs header */
+.curs-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+}
+
+.curs-header__title {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    color: var(--color-title-text);
+}
+
+.curs-header__body {
+    font-size: 46px;
+    line-height: 55px;
+    text-align: left;
+    color: var(--color-text);
+}
+
+/* navigation bar */
+.curs-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.curs-navigation > button {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    height: 38px;
+    padding: 8px 16px;
+}
+
+/* curs catalog */
+
+.curs-catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 70px;
+    margin-bottom: 100px;
+}
+
+/* curs card */
+.curs-wrapper {
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: var(--color-section-bg);
+}
+
+.curs-wrapper-description {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.curs-wrapper-description__name {
+    color: var(--color-text);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.curs-wrapper-description__author-name {
+    color: var(--color-non-main-text);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.curs-wrapper-description__time {
+    color: var(--color-text);
+    gap: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.curs-wrapper-description__tags {
+    color: var(--color-text);
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    display: flex;
+    gap: 12px;
+}
+
+.curs-wrapper-description__tags > * {
+    padding: 6px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 17px;
+}
+
+.curs-wrapper-footer {
+    background-color: var(--color-footer-bg);
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.curs-wrapper-footer__price {
+    color: var(--color-text);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    .curs-header__body {
+    font-size: 34px;
+    line-height: 41px;
+    }
+
+    .curs-wrapper-description__name {
+        font-size: 21px;
+        line-height: 25px;
+    }
+}

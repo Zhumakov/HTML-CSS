@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="styles/from_contacts/style.css" />
+  <title>Форма контактов</title>
+</head>
+<body>
+<main>
+  <section>
+    <h1>Свяжитесь со мной</h1>
+    <form action="#">
+      <div class="field">
+        <img src="images/from_contacts/message.svg" alt="email_img">
+        <label for="email">Email<sup>*</sup></label>
+        <input type="email" id="email" name="email" placeholder="Введите email" required>
+      </div>
+      <div class="field">
+        <img src="images/from_contacts/telegram.svg" alt="telegram_img">
+        <label for="telegram">Telegram</label>
+        <input type="email" id="telegram" name="telegram" placeholder="Введите email телеграмма">
+      </div>
+      <div class="field">
+        <img src="images/from_contacts/topic.svg" alt="topic_img">
+        <label for="topic">Тема<sup>*</sup></label>
+        <select name="topic" id="topic" required>
+          <option value="course" selected>Приобретение курсов</option>
+          <option value="feedback">Обратна связь</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="comment">Комментарий</label>
+        <textarea
+                name="comment"
+                id="comment"
+                rows="4"
+                cols="80"
+                placeholder="Введите комментарий"
+        ></textarea>
+      </div>
+      <label for="send"></label>
+      <button type="submit" id="send"  class="button_send">Отправить</button>
+    </form>
+  </section>
+</main>
+</body>
+</html>

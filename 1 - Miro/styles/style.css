@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    margin-bottom: 60px;
+}
+
+header nav {
+    padding: 40px 50px;
+    border-bottom: 3px solid #F0F0F0;
+    display: flex;
+    gap: 40px;
+}
+
+header a {
+    color: #050038;
+    font-family: Roboto, serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+section {
+    margin: 120px 40px;
+    display: flex;
+    gap: 110px;
+}
+
+h1, h2 {
+    color: #050038;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    font-family: "Roboto", serif;
+    margin-bottom: 17px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+footer {
+    background-color: #050038;
+    color: #FFFFFF;
+    margin-top: 120px;
+    padding: 47px 40px;
+}
+
+footer > div {
+    display: flex;
+    gap: 20px;
+}
+
+footer div > *{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: Roboto, serif;
+}
+
+.heroText {
+    color: #050038;
+    margin-top: 8px;
+    margin-bottom: 55px;
+}
+
+.heroForm input:focus {
+    background-color: #fafafa;
+}
+
+.bodyLink {
+    color: #4561ff;
+    text-decoration: underline;
+}
+
+.bodyLink:hover {
+    color: #2042c6;
+    text-decoration: none;
+}
+
+.sectionText {
+    color: #696687FF;
+    margin-top: 19px;
+    margin-bottom: 39px;
+
+}
+
+.sectionList li::marker {
+    content: url("../images/Jackdaw.svg");
+}
+
+#email {
+    border-radius: 32px;
+    border: 1px solid #9B99AF;
+    height: 48px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+}
+
+#heroButton {
+    background-color: #4262FF;
+    color: #FFFFFF;
+    border-radius: 32px;
+    border: 1px solid #4262FF;
+    height: 48px;
+    display: block;
+    width: 100%;
+    transition: background-color 1s;
+}
+
+#heroButton:hover {
+    background-color: #1c3dcc;
+}
+
+#heroButton:active {
+    background-color: #4766f4;
+}
+
+#heroSection {
+    gap: 50px;
+}
+
+#heroLogs {
+    display: flex;
+    gap: 20px;
+}

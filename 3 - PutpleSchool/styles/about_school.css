@@ -1,0 +1,145 @@
+/* about school section */
+
+.about-school {
+    max-width: 1220px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 24px;
+    background: var(--color-section-bg);
+}
+
+.about-school__description {
+    width: max(318px, 66%);
+    color: var(--color-text);
+    font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+    margin-bottom: 48px;
+}
+
+.about-school__ratings {
+    color: var(--color-text);
+    font-size: 36px;
+    line-height: 43px;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+/* header */
+.about-school-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.about-school-header__title {
+    color: var(--color-title-text);
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+}
+
+.about-school-header__body {
+    color: var(--color-text);
+    font-size: 46px;
+    line-height: 55px;
+    text-align: left;
+}
+
+/* labels */
+.about-school-labels {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 70px;
+    margin-bottom: 70px;
+}
+
+.about-school-label {
+    height: 200px;
+    background-color: var(--label-bg-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 48px 0;
+}
+
+.about-school-label__head {
+    background: var(--color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 55px;
+    text-align: center;
+}
+
+.about-school-label__body {
+    color: var(--color-text);
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+/* rating labels */
+.about-school-ratings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 70px;
+    margin-bottom: 100px;
+}
+
+.about-school-rating-label {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 24px 32px;
+    background-color: var(--label-bg-color);
+    border-radius: 10px;
+}
+
+.about-school-rating-label > span {
+    color: var(--color-text);
+    font-size: 54px;
+    line-height: 65px;
+    text-align: left;
+}
+
+@media (max-width: 800px) {
+    .about-school-header__body {
+        font-size: 34px;
+        line-height: 41px;
+    }
+
+    .about-school__ratings {
+        font-size: 26px;
+        line-height: 31px;
+    }
+
+    .about-school-labels {
+        gap: 16px;
+    }
+    .about-school-label {
+        height: 90px;
+        padding: 16px;
+        gap: 0;
+    }
+
+    .about-school-label__head {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .about-school-label__body {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .about-school-ratings {
+        gap: 16px;
+    }
+}
